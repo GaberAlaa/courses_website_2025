@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and responsive viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Courses</title>
+    <!-- External CSS files for styling -->
+    <link rel="stylesheet" href="courses_page.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+     <!-- Navigation Bar -->
+    <nav class="navbar">
+
+    </nav>
+
+    <!-- Main container for all content -->
+    <div class="container">
+        <!-- Main title section -->
+        
+        <!-- Grid container for all course cards -->
+        <div class="courses-grid">
+            <!-- English Course Card -->
+            <div class="course-card">
+                <!-- Course image section with hover effect -->
+                <div class="card-image">
+                    <img src="pics/Statue of Liberty.jpg" alt="English Course">
+                </div>
+                <!-- Course content section with expandable details -->
+                <div class="card-content">
+                    <!-- Course icon with language symbol -->
+                    <div class="card-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <!-- Course title and description -->
+                    <h2>English</h2>
+                    <p>Master the global language of business and communication. Perfect for beginners to advanced learners.</p>
+                    <!-- Key features list with bullet points -->
+                    <ul class="features">
+                        <li>Interactive lessons</li>
+                        <li>Speaking practice</li>
+                        <li>Business English</li>
+                    </ul>
+                    <!-- Expandable content section (shows on hover) -->
+                    <div class="expanded-content">
+                        <!-- Detailed course information with icons -->
+                        <div class="course-details">
+                            <h3>Course Details</h3>
+                            <ul>
+                                <li><i class="fas fa-clock"></i> Duration: 12 weeks</li>
+                                <li><i class="fas fa-signal"></i> Levels: Beginner to Advanced</li>
+                                <li><i class="fas fa-users"></i> Class Size: 8-12 students</li>
+                                <li><i class="fas fa-certificate"></i> Certification: CEFR aligned</li>
+                                <li><i class="fas fa-calendar"></i> Practice Sessions: 3 times/week</li>
+                            </ul>
+                        </div>
+                        <!-- Enrollment button with click handler -->
+                        <button class="enroll-btn" onclick="handleEnrollment('English')">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Spanish Course Card -->
+            <div class="course-card">
+                <!-- Course image section -->
+                <div class="card-image">
+                    <img src="pics/spain.jpg" alt="Spanish Course">
+                </div>
+                <!-- Course content section -->
+                <div class="card-content">
+                    <!-- Course icon with conversation symbol -->
+                    <div class="card-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <!-- Course title and description -->
+                    <h2>Spanish</h2>
+                    <p>Learn one of the world's most spoken languages. Immerse yourself in Hispanic culture and communication.</p>
+                    <!-- Key features list -->
+                    <ul class="features">
+                        <li>Cultural immersion</li>
+                        <li>Grammar mastery</li>
+                        <li>Conversation skills</li>
+                    </ul>
+                    <!-- Expandable content section -->
+                    <div class="expanded-content">
+                        <!-- Detailed course information -->
+                        <div class="course-details">
+                            <h3>Course Details</h3>
+                            <ul>
+                                <li><i class="fas fa-clock"></i> Duration: 10 weeks</li>
+                                <li><i class="fas fa-signal"></i> Levels: A1 to C1</li>
+                                <li><i class="fas fa-users"></i> Class Size: 6-10 students</li>
+                                <li><i class="fas fa-certificate"></i> Certification: DELE preparation</li>
+                                <li><i class="fas fa-calendar"></i> Cultural Activities: Weekly</li>
+                            </ul>
+                        </div>
+                        <!-- Enrollment button -->
+                        <button class="enroll-btn" onclick="handleEnrollment('Spanish')">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- French Course Card -->
+            <div class="course-card">
+                <!-- Course image section -->
+                <div class="card-image">
+                    <img src="pics/Eiffeltower .jpg" alt="French Course">
+                </div>
+                <!-- Course content section -->
+                <div class="card-content">
+                    <!-- Course icon with book symbol -->
+                    <div class="card-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <!-- Course title and description -->
+                    <h2>French</h2>
+                    <p>Discover the language of love and culture. From basic phrases to advanced literature.</p>
+                    <!-- Key features list -->
+                    <ul class="features">
+                        <li>Pronunciation focus</li>
+                        <li>Cultural context</li>
+                        <li>Writing skills</li>
+                    </ul>
+                    <!-- Expandable content section -->
+                    <div class="expanded-content">
+                        <!-- Detailed course information -->
+                        <div class="course-details">
+                            <h3>Course Details</h3>
+                            <ul>
+                                <li><i class="fas fa-clock"></i> Duration: 12 weeks</li>
+                                <li><i class="fas fa-signal"></i> Levels: A1 to B2</li>
+                                <li><i class="fas fa-users"></i> Class Size: 8-12 students</li>
+                                <li><i class="fas fa-certificate"></i> Certification: DELF/DALF</li>
+                                <li><i class="fas fa-calendar"></i> Literature Focus: Weekly</li>
+                            </ul>
+                        </div>
+                        <!-- Enrollment button -->
+                        <button class="enroll-btn" onclick="handleEnrollment('French')">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Japanese Course Card -->
+            <div class="course-card">
+                <!-- Course image section -->
+                <div class="card-image">
+                    <img src="pics/japan.jpg" alt="Japanese Course">
+                </div>
+                <!-- Course content section -->
+                <div class="card-content">
+                    <!-- Course icon with Asia globe symbol -->
+                    <div class="card-icon">
+                        <i class="fas fa-globe-asia"></i>
+                    </div>
+                    <!-- Course title and description -->
+                    <h2>Japanese</h2>
+                    <p>Explore the fascinating world of Japanese language and culture. Perfect for anime and manga lovers.</p>
+                    <!-- Key features list -->
+                    <ul class="features">
+                        <li>Writing systems</li>
+                        <li>Cultural insights</li>
+                        <li>Modern Japanese</li>
+                    </ul>
+                    <!-- Expandable content section -->
+                    <div class="expanded-content">
+                        <!-- Detailed course information -->
+                        <div class="course-details">
+                            <h3>Course Details</h3>
+                            <ul>
+                                <li><i class="fas fa-clock"></i> Duration: 16 weeks</li>
+                                <li><i class="fas fa-signal"></i> Levels: N5 to N3</li>
+                                <li><i class="fas fa-users"></i> Class Size: 6-8 students</li>
+                                <li><i class="fas fa-certificate"></i> Certification: JLPT preparation</li>
+                                <li><i class="fas fa-calendar"></i> Calligraphy: Bi-weekly</li>
+                            </ul>
+                        </div>
+                        <!-- Enrollment button -->
+                        <button class="enroll-btn" onclick="handleEnrollment('Japanese')">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript file for interactive functionality -->
+    <script src="courses_page.js"></script>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About LearnHub</h3>
+                <p>Empowering learners worldwide with quality education in programming, languages, and soft skills. Join our community of learners and transform your future.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../programming_courses/index.html">Programming Courses</a></li>
+                    <li><a href="courses_page.html">Language Courses</a></li>
+                    <li><a href="../soft skills/index.html">Soft Skills</a></li>
+                    <li><a href="../contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Education Street, Learning City</li>
+                    <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                    <li><i class="fas fa-envelope"></i> info@learnhub.com</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for updates and exclusive offers.</p>
+                <form class="footer-newsletter">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 LearnHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <style>
+        /* Footer Styles */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 4rem 0 0 0;
+            margin-top: 4rem;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h3 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        .footer-section p {
+            color: #ecf0f1;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: rgb(237, 234, 255);
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-section ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: rgb(237, 234, 255);
+        }
+
+        .contact-info li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #ecf0f1;
+        }
+
+        .contact-info li i {
+            color: rgb(237, 234, 255);
+        }
+
+        .footer-newsletter {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .footer-newsletter input {
+            flex: 1;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .footer-newsletter input::placeholder {
+            color: #bdc3c7;
+        }
+
+        .footer-newsletter button {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            background: rgb(237, 234, 255);
+            color: #2c3e50;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .footer-newsletter button:hover {
+            background: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 3rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-bottom p {
+            color: #bdc3c7;
+        }
+
+        @media (max-width: 768px) {
+            .footer-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+
+            .contact-info li {
+                justify-content: center;
+            }
+
+            .footer-newsletter {
+                flex-direction: column;
+            }
+
+            .footer-newsletter button {
+                width: 100%;
+            }
+        }
+    </style>
+    <script src="/main page/main.js"></script>
+</body>
+</html>
